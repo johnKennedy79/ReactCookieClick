@@ -1,0 +1,58 @@
+.clickbtn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+}
+.react {
+}
+
+.reactpulse {
+  z-index: 50;
+  animation: pulse 3.5s infinite linear;
+}
+
+@keyframes pulse {
+  10% {
+    rotate: 36deg;
+    scale: 0.8;
+  }
+  20% {
+    rotate: 72deg;
+    scale: 0.6;
+  }
+  30% {
+    rotate: 108deg;
+    scale: 0.4;
+  }
+  40% {
+    rotate: 144deg;
+    scale: 0.6;
+  }
+  50% {
+    rotate: 180deg;
+    scale: 0.8;
+  }
+  60% {
+    rotate: 216deg;
+    scale: 1;
+  }
+  70% {
+    rotate: 252deg;
+    scale: 1.2;
+  }
+  80% {
+    rotate: 288deg;
+    scale: 1.4;
+  }
+  90% {
+    rotate: 324deg;
+    scale: 1.2;
+  }
+  100% {
+    rotate: 360deg;
+    scale: 1;
+  }
+}
