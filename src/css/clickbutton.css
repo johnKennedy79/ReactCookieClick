@@ -7,6 +7,7 @@
   width: 250px;
 }
 .react {
+  z-index: 50;
 }
 
 .reactpulse {
