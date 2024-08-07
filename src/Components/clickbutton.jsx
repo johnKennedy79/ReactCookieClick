@@ -1,24 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function ClickButton() {
-  const [count, SetCount] = useState(0);
+  const [clickCount, setCount] = useState(0);
   const [pulse, setPulse] = useState(false);
-  const ToggleClass = () => {
-    setPulse(!pulse);
-  };
 
-  function handleclick() {
-    SetCount(count + 1);
-    ToggleClass();
+  useEffect(() => {
+    let pulsetimeout;
+    if (pulse) {
+      pulsetimeout = setTimeout(() => {
+        setPulse(false);
+      }, 3501);
+    }
+    return () => clearTimeout(pulsetimeout);
+  }, [pulse]);
+  function handleClick() {
+    setCount((prevCount) => prevCount + 1);
+    setPulse(true);
   }
 
   return (
     <>
-      <p>You have {count} atoms</p>
-      <div div className="clickbtn">
+      <p>You have {clickCount} atoms</p>
+      <div className="clickbtn">
         <img
           className={pulse ? "reactpulse" : "react"}
-          onClick={handleclick} //set timeout function to run animation
+          onClick={handleClick}
           src="../img/reactlogonbg.png"
           alt="React Logo"
         />
