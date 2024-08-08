@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
-export default function ClickButton() {
-  const [clickCount, setCount] = useState(0);
+export default function ClickButton(props) {
   const [pulse, setPulse] = useState(false);
-
   useEffect(() => {
     let pulsetimeout;
     if (pulse) {
@@ -14,13 +12,12 @@ export default function ClickButton() {
     return () => clearTimeout(pulsetimeout);
   }, [pulse]);
   function handleClick() {
-    setCount((prevCount) => prevCount + 1);
     setPulse(true);
+    props.addClick();
   }
 
   return (
     <>
-      <p>You have {clickCount} atoms</p>
       <div className="clickbtn">
         <img
           className={pulse ? "reactpulse" : "react"}
