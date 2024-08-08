@@ -1,9 +1,10 @@
 import "./App.css";
 import ClickButton from "./Components/clickbutton.jsx";
 import UpBtn from "./Components/upgrades.jsx";
-
 import { useState, useEffect } from "react";
 import "./css/clickbutton.css";
+import "./css/upgrades.css";
+
 export default function App() {
   const [clickCount, setClickCount] = useState(
     localStorage.getItem("clickCount")
@@ -50,13 +51,19 @@ export default function App() {
   }
   return (
     <>
-      <h2>Can you enrich enough atoms to make a</h2>
-      <h1>REACTION!</h1>
-      <h2>You have {clickCount} atoms</h2>
-      <h2>You are producing {aps} atoms per secound</h2>
-      <h3>Click the react logo to collide more atoms </h3>
-      <ClickButton addClick={addClick} />
-      <UpBtn buyUpgrade={buyUpgrade} />
+      <h2 className="title">Can you enrich enough atoms to make a</h2>
+      <h1 className="reaction">REACTION!</h1>
+      <h2 className="title">You have:</h2>
+      <h2 className="reaction">{clickCount}</h2>
+      <h2 className="title">atoms</h2>
+      <h2 className="title">You are producing:</h2>
+      <h2 className="reaction">{aps}</h2>
+      <h2 className="title">atoms per second</h2>
+      <h3 className="title">Click the react logo to collide more atoms!</h3>
+      <div className="box1">
+        <ClickButton addClick={addClick} />
+        <UpBtn buyUpgrade={buyUpgrade} />
+      </div>
     </>
   );
 }

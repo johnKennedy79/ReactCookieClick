@@ -19,12 +19,14 @@ export default function ClickButton(props) {
   return (
     <>
       <div className="clickbtn">
-        <img
-          className={pulse ? "reactpulse" : "react"}
-          onClick={handleClick}
-          src="../img/reactlogonbg.png"
-          alt="React Logo"
-        />
+        <div>
+          <img
+            className={pulse ? "reactpulse" : "react"}
+            onClick={handleClick}
+            src="../img/reactlogonbg.png"
+            alt="React Logo"
+          />
+        </div>
       </div>
     </>
   );

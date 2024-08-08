@@ -5,9 +5,13 @@
   align-items: center;
   height: 250px;
   width: 250px;
+  border-radius: 50%;
 }
 .react {
   z-index: 50;
+}
+.clickbtn:hover {
+  background-color: #fc0f7d;
 }
 
 .reactpulse {
@@ -56,6 +60,4 @@
     rotate: 360deg;
     scale: 1;
   }
-}
-@media (orientation: landscape) {
 }
