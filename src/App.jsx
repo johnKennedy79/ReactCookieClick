@@ -50,20 +50,22 @@ export default function App() {
     }
   }
   return (
-    <>
-      <h2 className="title">Can you enrich enough atoms to make a</h2>
-      <h1 className="reaction">REACTION!</h1>
-      <h2 className="title">You have:</h2>
-      <h2 className="reaction">{clickCount}</h2>
-      <h2 className="title">atoms</h2>
-      <h2 className="title">You are producing:</h2>
-      <h2 className="reaction">{aps}</h2>
-      <h2 className="title">atoms per second</h2>
-      <h3 className="title">Click the react logo to collide more atoms!</h3>
+    <div className="appbox">
+      <div className="titlebox">
+        <h2 className="title">Can you enrich enough atoms to make a</h2>
+        <h1 className="reaction">REACTION!</h1>
+        <h2 className="titleatm">You have:</h2>
+        <h2 className="reactionatm">{clickCount}</h2>
+        <h2 className="titleatm">atoms</h2>
+        <h2 className="titleaps">You are producing:</h2>
+        <h2 className="reactionaps">{aps}</h2>
+        <h2 className="titleaps">atoms per second</h2>
+        <h3 className="titleh3">Click the react logo to collide more atoms!</h3>
+      </div>
       <div className="box1">
         <ClickButton addClick={addClick} />
         <UpBtn buyUpgrade={buyUpgrade} />
       </div>
-    </>
+    </div>
   );
 }

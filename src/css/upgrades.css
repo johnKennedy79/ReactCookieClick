@@ -24,7 +24,8 @@
 .upgradeBtn {
   background-color: #70ff50;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 0.7rem;
   margin: 0.5rem;
   padding: 0.5rem;
   height: 12rem;
@@ -64,4 +65,133 @@
   color: #70ff50;
   text-shadow: -2px 2px 2px #c535ff;
   box-shadow: -5px 5px 15px #70ff50;
+}
+.btnname {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.btnimage {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 1rem;
+  margin-top: 0rem;
+  margin-right: 1rem;
+}
+.upgradeBtn p {
+  margin-bottom: 0;
+}
+@media (orientation: landscape) {
+  .buttonContaineropen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 160vh;
+    transition: 1s ease-in;
+    transform: translateY(0vh);
+  }
+  .buttonContainerclosed {
+    width: 0vw;
+    height: 0vh;
+  }
+  .upgradeBtn {
+    height: 10rem;
+    width: 45%;
+  }
+  .btnname {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 832px) {
+  .buttonContaineropen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: 160vh;
+    transition: 1s ease-in;
+    transform: translateY(0vh);
+  }
+  .buttonContainerclosed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95vw;
+    height: 0vh;
+    transition: 1s ease-in-out;
+    transform: translateY(100vh);
+    overflow: hidden;
+  }
+
+  .upgradeBtn {
+    background-color: #70ff50;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 0.8rem;
+    line-height: 0.7rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: 12rem;
+    width: 40%;
+    color: #c535ff;
+    text-shadow: -1px 1px 2px #000063;
+    border-radius: 20px;
+    box-shadow: -5px 5px 15px #c535ff;
+  }
+
+  @property --bg-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: "<angle>";
+  }
+
+  @keyframes spin {
+    to {
+      --bg-angle: 360deg;
+    }
+  }
+  .upgradeBtn:hover {
+    animation: spin 2s infinite linear;
+    height: 12rem;
+    background: linear-gradient(
+          to bottom,
+          oklch(0.1 0.2 240 / 0.95),
+          oklch(0.1 0.2 240 / 0.95)
+        )
+        padding-box,
+      conic-gradient(
+          from var(--bg-angle) in oklch longer hue,
+          oklch(1 0.37 0) 0 0
+        )
+        border-box;
+    border: 6px solid transparent;
+    color: #70ff50;
+    text-shadow: -2px 2px 2px #c535ff;
+    box-shadow: -5px 5px 15px #70ff50;
+  }
+  .btnname {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btnimage {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-right: 1rem;
+  }
+  .upgradeBtn p {
+    margin-bottom: 0;
+  }
 }

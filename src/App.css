@@ -9,9 +9,165 @@
   line-height: 1.2rem;
   text-shadow: -1px 1px 2px #70ff50;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+.titleatm {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #c535ff;
+  line-height: 1.2rem;
+  text-shadow: -1px 1px 2px #70ff50;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.titleaps {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #c535ff;
+  line-height: 1.2rem;
+  text-shadow: -1px 1px 2px #70ff50;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.titleh3 {
+  color: #c535ff;
+  line-height: 1.2rem;
+  text-shadow: -1px 1px 2px #70ff50;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 .reaction {
   color: #70ff50;
   text-shadow: -2px 2px 2px #c535ff;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.reactionatm {
+  color: #70ff50;
+  text-shadow: -2px 2px 2px #c535ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.reactionaps {
+  color: #70ff50;
+  text-shadow: -2px 2px 2px #c535ff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+@media (orientation: landscape) {
+  .titlebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .title {
+    width: 100%;
+  }
+  .titleatm {
+    width: 25%;
+  }
+  .titleaps {
+    width: 39%;
+  }
+  .titleh3 {
+    width: 100%;
+  }
+  .reaction {
+    width: 100%;
+    margin: 0;
+  }
+  .reactionatm {
+    width: 49%;
+  }
+  .reactionaps {
+    width: 20%;
+  }
+  .appbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+  }
+}
+
+@media (min-width: 832px) {
+  .titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    color: #c535ff;
+    line-height: 1.2rem;
+    text-shadow: -1px 1px 2px #70ff50;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+  }
+  .titleatm {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #c535ff;
+    line-height: 1.2rem;
+    text-shadow: -1px 1px 2px #70ff50;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .titleaps {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    color: #c535ff;
+    line-height: 1.2rem;
+    text-shadow: -1px 1px 2px #70ff50;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .titleh3 {
+    color: #c535ff;
+    line-height: 1.2rem;
+    text-shadow: -1px 1px 2px #70ff50;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .reaction {
+    color: #70ff50;
+    text-shadow: -2px 2px 2px #c535ff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .reactionatm {
+    color: #70ff50;
+    text-shadow: -2px 2px 2px #c535ff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  .reactionaps {
+    color: #70ff50;
+    text-shadow: -2px 2px 2px #c535ff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
 }
