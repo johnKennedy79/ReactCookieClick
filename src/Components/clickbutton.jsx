@@ -23,7 +23,7 @@ export default function ClickButton(props) {
           <img
             className={pulse ? "reactpulse" : "react"}
             onClick={handleClick}
-            src="../img/reactlogonbg.png"
+            src="img/reactlogonbg.png"
             alt="React Logo"
           />
         </div>

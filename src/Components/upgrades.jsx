@@ -3,16 +3,24 @@ import { useState, useEffect } from "react";
 export default function UpBtn(props) {
   const [upgrade, setUpgrade] = useState([]);
   const [upgradedata, setUpgradedata] = useState([
-    { id: 1, btnname: "Transmutation", btnimage: "../../img/id1.png" },
-    { id: 2, btnname: "Isotopes", btnimage: "../../img/id2.png" },
-    { id: 3, btnname: "Enrichmant Plant", btnimage: "../../img/id3.png" },
-    { id: 4, btnname: "Nuclear Binding", btnimage: "../../img/id4.jpg" },
-    { id: 5, btnname: "Binding Energy", btnimage: "../../img/id5.png" },
-    { id: 6, btnname: "Reactor Core", btnimage: "../../img/id6.png" },
-    { id: 7, btnname: "Fission", btnimage: "../../img/id7.png" },
-    { id: 8, btnname: "Antiparticle Fission", btnimage: "../../img/id8.png" },
-    { id: 9, btnname: "Cold Fission", btnimage: "../../img/id9.png" },
-    { id: 10, btnname: "Zero Point Fission", btnimage: "../../img/id10.png" },
+    { id: 1, btnname: "Transmutation", btnimage: "img/id1.png" },
+    { id: 2, btnname: "Isotopes", btnimage: "img/id2.png" },
+    {
+      id: 3,
+      btnname: "Enrichmant Plant",
+      btnimage: "img/id3.png",
+    },
+    { id: 4, btnname: "Nuclear Binding", btnimage: "img/id4.jpg" },
+    { id: 5, btnname: "Binding Energy", btnimage: "img/id5.png" },
+    { id: 6, btnname: "Reactor Core", btnimage: "img/id6.png" },
+    { id: 7, btnname: "Fission", btnimage: "img/id7.png" },
+    { id: 8, btnname: "Antiparticle Fission", btnimage: "img/id8.png" },
+    { id: 9, btnname: "Cold Fission", btnimage: "img/id9.png" },
+    {
+      id: 10,
+      btnname: "Zero Point Fission",
+      btnimage: "img/id10.png",
+    },
   ]);
   const [show, setShow] = useState(false);
   useEffect(function () {

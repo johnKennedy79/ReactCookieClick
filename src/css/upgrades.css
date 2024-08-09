@@ -79,6 +79,9 @@
   margin-top: 0rem;
   margin-right: 1rem;
 }
+.upgradeBtn:hover .btnimage {
+  background-color: antiquewhite;
+}
 .upgradeBtn p {
   margin-bottom: 0;
 }
