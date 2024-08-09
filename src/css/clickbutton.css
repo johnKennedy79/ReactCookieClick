@@ -6,12 +6,14 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
+  margin-top: 1rem;
 }
 .react {
   z-index: 50;
 }
 .clickbtn:hover {
   background-color: #fc0f7d;
+  cursor: pointer;
 }
 
 .reactpulse {

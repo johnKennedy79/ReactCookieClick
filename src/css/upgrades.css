@@ -65,6 +65,7 @@
   color: #70ff50;
   text-shadow: -2px 2px 2px #c535ff;
   box-shadow: -5px 5px 15px #70ff50;
+  cursor: pointer;
 }
 .btnname {
   display: flex;
