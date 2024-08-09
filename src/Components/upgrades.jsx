@@ -43,7 +43,6 @@ export default function UpBtn(props) {
       </button>
       <div className={show ? "buttonContaineropen" : "buttonContainerclosed"}>
         {upgrade.map(function (upgrade, index) {
-          console.log("id is", upgrade.id, "name is", upgrade.name);
           return (
             <button
               className="upgradeBtn"
